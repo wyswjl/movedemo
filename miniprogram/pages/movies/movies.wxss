@@ -1,0 +1,33 @@
+/* pages/movies/movies.wxss */
+.model{
+  height: 300rpx;
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #999
+}
+image{
+  width: 260rpx;
+  height: 100%;
+  border: 1px solid #999
+}
+.info{
+  flex: 1;
+  margin-left: 20px;
+}
+.name{
+  color: #666;
+  font-weight: bold;
+  font-size: 40rpx;
+  word-break: break-all;/*允许在单词内换行*/
+  text-align: left;
+  line-height: 45rpx;
+  text-overflow: -o-ellipsis-lastline;/*css3中webkit内核提供的一个方法类似ellipsis*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;/*自适应盒子*/
+  -webkit-line-clamp: 1;/*此处为1行,如果是两行就改成2*/
+  -webkit-box-orient: vertical;
+}
+.score{
+  color: #faaf00
+}

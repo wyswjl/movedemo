@@ -1,0 +1,12 @@
+<!--pages/evaluation/evaluation.wxml-->
+<view class="pj">
+    <view>评价：
+       <van-field value="{{ content }}" placeholder="谈谈你的想法吧!" border="{{ false }}" bind:change="onContentChange"/>
+    </view>
+    <view>评分:<van-rate value="{{ value }}" bind:change="onScoreChange" /></view>
+    <van-button type="warning" bindtap="upLoadImg">上传图片</van-button>
+    <view>
+      <image class="imgs"src="{{item}}" wx:for="{{imgs}}" wx:key="{{index}}"></image>
+    </view>
+    <van-button type="danger" size="large" bindtap="submit">提交</van-button>
+</view>

@@ -1,0 +1,11 @@
+<swiper autoplay="true" indicator-dots="true" style="height:{{height}}px;" >
+    <block wx:for="{{imgUrls}}" wx:key="{{item}}">
+        <swiper-item>
+            <image class='auto-img' bindload='setContainerHeight' src='{{item.url}}' mode="widthFix"></image>
+          
+        </swiper-item>
+    </block>
+</swiper>
+ 
+ <van-button plain type="primary" class="btn" bindtap="goIn">立即体验</van-button>
+ 

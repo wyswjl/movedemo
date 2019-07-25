@@ -1,0 +1,15 @@
+<view>
+    <block wx:for="{{moveList}}" wx:key="{{item}}">
+   
+      <view class="model" bindtap="goTo" data-No="{{item.no}}">
+        <image src='{{item.imgUrl}}'></image>
+        <view class="info">
+          <text class="name">{{item.name}}</text>
+          <!-- <van-rate value="{{item.score}}" bind:change="" /> -->
+          <view> 观众评分： <text class="score">{{item.score}}</text></view>
+          <view>主演:<text>{{item.action}}</text></view>
+        </view>
+      </view>
+     
+    </block>
+</view>

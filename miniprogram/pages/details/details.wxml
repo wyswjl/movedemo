@@ -1,0 +1,37 @@
+<!--miniprogram/pages/details/details.wxml-->
+<view >
+   <!--  -->
+    <view class="bg" style='background:url({{array.imgUrl}})'>
+    </view>
+    <view class="mask"></view>
+    <view class="_info">
+        <image src="{{array.imgUrl}}" class="image"></image>
+        <view class="info">
+              <text class="name">{{array.name}}</text>
+              <view class="row">
+             <van-rate value="{{score}}"  readonly  icon="like" void-icon="like-o" count="4"/>
+             <text style="color:#F4D03F">{{array.score}}</text></view>
+             <text>{{array.time}}</text>
+             <view>
+                <view class="btns">
+                  <button bindtap="toal">想看</button>
+                  <button bindtap="goTo">看过</button>
+                </view>
+             </view>
+        </view>
+    </view>
+    <!-- 剧情简介 -->
+    <van-panel title="剧情简介" desc="" status="">
+      <view>{{array.detail}}</view>
+    </van-panel>
+    <!--演员  -->
+    <van-panel title="演员" desc="" status="">
+    <view class="row">
+       <view wx:for="{{array.acImg}}" wx:key="{{item}}" class="imgCloumn">
+          <image src="{{item.img}}"></image> 
+          <text style="text-align:center">{{item.acName}}</text>
+       </view>
+    </view>   
+    </van-panel>
+   <!--  -->
+</view> 

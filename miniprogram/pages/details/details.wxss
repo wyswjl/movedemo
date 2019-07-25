@@ -1,0 +1,95 @@
+/* miniprogram/pages/details/details.wxss */
+.body{
+  
+  
+ }
+ .bg{
+   width: 100%;
+   height: 340rpx;
+   display: flex;
+   padding: 20rpx;
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: #F4F6F7  ;
+   filter: blur(6rpx);
+   opacity: .9;
+ }
+ .mask{
+   position: absolute;
+   width: 100%;
+   height: 340rpx;
+   background-color: #333;
+   top: 0;
+   left: 0;
+   z-index:-1;
+ }
+ ._info{
+  position: absolute;
+   width: 100%;
+   height: 340rpx;
+   top: 0;
+   left: 0;
+   z-index:666;
+   color: #F4F6F7;
+   display: flex;
+   flex-direction: row;
+   padding: 15rpx;
+ }
+  .image{
+  width: 250rpx;
+  height: 300rpx;
+  border: 1px solid #999
+
+}
+ .info{
+   flex: 1;
+   margin-left: 20rpx;
+ }
+ .name{
+  word-break: break-all;/*允许在单词内换行*/
+  text-overflow: -o-ellipsis-lastline;/*css3中webkit内核提供的一个方法类似ellipsis*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;/*自适应盒子*/
+  -webkit-line-clamp: 1;/*此处为1行,如果是两行就改成2*/
+  -webkit-box-orient: vertical;
+ }
+
+.van-panel{
+  margin-top: 10rpx;
+  color: #666
+}
+.row{
+  display: flex;
+  flex-direction: row
+}
+.imgCloumn{
+  display: flex;
+  flex-direction: column ;
+  padding: 10px;
+}
+image{
+  width: 260rpx;
+  height: 280rpx;
+  border: 1px solid #999
+
+}
+.person{
+  display: flex;
+  flex-direction: column;
+}
+.btns{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ right: 2%;
+ 
+}
+button{
+  width: 45%;
+  height: 80rpx;
+  border: 1px solid #999;
+  color: #F4F6F7;
+  text-align: center;
+   
+}

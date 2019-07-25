@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/main/main",
+    "pages/movies/movies",
+    "pages/my/my",
+    "pages/details/details",
+    "pages/evaluation/evaluation"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FF00FF",
+    "navigationBarTitleText": "movies",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#ff0000",
+    "list": [
+      {
+        "pagePath": "pages/movies/movies",
+        "text": "电影",
+        "iconPath": "images/icon.png",
+        "selectedIconPath": "images/selectd.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/icon.png",
+        "selectedIconPath": "images/selectd.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
